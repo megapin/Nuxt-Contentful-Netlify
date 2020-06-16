@@ -9,6 +9,7 @@
       ></div> -->
       <div class="single-post__content" 
       >{{ currentPost.fields.content }}</div>
+      <div> {{ currentPost.fields.additionalContent }}</div>
     </div>
     <p v-else class="single-post__loading">
       Loading
