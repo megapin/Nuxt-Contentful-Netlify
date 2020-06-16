@@ -12,7 +12,7 @@
 
       <div class="single-post__content" 
       >{{ currentPost.fields.title }}</div>
-      <div> {{ currentPost.fields }}</div>
+      <div> {{ asset }}</div>
     </div>
     <p v-else class="single-post__loading">
       Loading
@@ -25,6 +25,9 @@ export default {
   computed: {
     currentPost() {
       return this.$store.state.post.currentPost
+    },
+    asset() {
+      return  this.$store.state.asset
     },
     isLoading() {
       return this.$store.state.post.isLoading
