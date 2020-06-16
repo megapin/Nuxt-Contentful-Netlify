@@ -15,6 +15,12 @@ export const actions = {
     const response = await client.getEntries({
       content_type: 'blogPost'
     })
+    
+    // const asset = client.getAsset('5cvGYjwCvZR4WRVZM0Yvac')
+    //   .then((asset) => console.log(asset.fields.file.url))
+    // const asset = await client.getAsset('5cvGYjwCvZR4WRVZM0Yvac')
+    // console.log(asset.fields.file.url)
+
     if (response.items.length > 0) {
       commit('setPosts', response.items)
     }
