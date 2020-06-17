@@ -10,9 +10,10 @@
       <!-- <div class="single-post__content" 
       >{{ currentPost.fields.content }}</div> -->
 
-      <div class="single-post__content" 
-      >{{ currentPost.fields.title }}</div>
-      <div> {{ asset }}</div>
+      <div class="single-post__content">
+        {{ currentPost.fields.title }}
+      </div>
+      <div> {{ currentPost.fields.text }}</div>
     </div>
     <p v-else class="single-post__loading">
       Loading
