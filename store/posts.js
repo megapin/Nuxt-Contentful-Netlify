@@ -23,7 +23,7 @@ export const actions = {
     // const asset = client.getAsset('5cvGYjwCvZR4WRVZM0Yvac')
     //   .then((asset) => console.log(asset.fields.file.url))
     const asset = await client.getAsset('5cvGYjwCvZR4WRVZM0Yvac')
-    commit('setAsset', asset.fields.file.url)
+    commit('setAsset', asset)
 
     if (response.items.length > 0) {
       commit('setPosts', response.items)
